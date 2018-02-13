@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>VEFidentityServiceSoapBinding class</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/github.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel='stylesheet' type='text/css' href='../Styles/Blueprint_Styles/Style.css' />
+    <script src='../Scripts/Blueprint_Scripts/Script.js' type='text/javascript'></script>
+</head>
+    <body>
+        <h2>VEFidentityServiceSoapBinding </h2>
+        
+        <p><strong>SOAP Version: 1.1</strong></p>
+        <p>Main class which you can use to connect to your web service</p>
+        
+        <h3>Important settings</h3>
+        <ul>
+            <li>Timeout - the timeout for network operations, in milliseconds. By default: 60 sec.
+                <br />
+                Example:<br />
+                <pre >
+                    <code class="java">
+VEFidentityServiceSoapBinding service = new VEFidentityServiceSoapBinding(null,"https://kuali-research-qa.bu.edu/kc/remoting/soap/kim/v2_0/identityService",30000);
+service.addAffiliationToEntity();
+                    </code>
+        
+</pre>
+            </li>
+            <li>Url - the web service address. By default it is retrieved from the wsdl file
+                <br />
+                Example:<br />
+                <pre >
+                    <code class="java">
+VEFidentityServiceSoapBinding service = new VEFidentityServiceSoapBinding(null,"https://kuali-research-qa.bu.edu/kc/remoting/soap/kim/v2_0/identityService");
+service.addAffiliationToEntity();
+                    </code>
+        
+</pre>
+            </li>
+            <li>httpHeaders - allows you to add custom headers to the http requests.
+                <br/>
+                Example:<br/>
+                <pre >
+                    <code class="java">
+VEFidentityServiceSoapBinding service = new VEFidentityServiceSoapBinding();
+service.httpHeaders.add( new HeaderProperty("Authorization","Basic QWxhZGRpbjpPcGVuU2VzYW1l"));
+service.addAffiliationToEntity();
+                    </code>
+</pre>
+
+            </li>
+            <li>
+                Enable logging - if you enable logging, all requests/responses will be write to the console (for debugging purposes)
+                <br />
+                Example:<br />
+                <pre >
+                    <code class="java">
+VEFidentityServiceSoapBinding service = new VEFidentityServiceSoapBinding();
+service.enableLogging=true;
+service.addAffiliationToEntity();
+                    </code>
+</pre>
+            </li>
+        </ul>
+        
+        <h3>Methods</h3>
+        <ul>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addAffiliationToEntity">addAffiliationToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipal">getPrincipal</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipalByPrincipalNameAndPassword">getPrincipalByPrincipalNameAndPassword</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateAffiliation">updateAffiliation</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateEmployment">updateEmployment</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addNameToEntity">addNameToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEmailType">getEmailType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addAddressToEntity">addAddressToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllAddressTypes">findAllAddressTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findEntityDefaults">findEntityDefaults</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityDefaultByPrincipalId">getEntityDefaultByPrincipalId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityDefaultByPrincipalName">getEntityDefaultByPrincipalName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addCitizenshipToEntity">addCitizenshipToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllEmploymentStatuses">findAllEmploymentStatuses</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllCitizenshipStatuses">findAllCitizenshipStatuses</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getDefaultNamesForPrincipalIds">getDefaultNamesForPrincipalIds</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEmploymentType">getEmploymentType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateExternalIdentifier">updateExternalIdentifier</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityPrivacyPreferences">getEntityPrivacyPreferences</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateAddress">updateAddress</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addPhoneToEntity">addPhoneToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getAffiliationType">getAffiliationType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getExternalIdentifierType">getExternalIdentifierType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipalsByEmployeeId">getPrincipalsByEmployeeId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivatePrincipal">inactivatePrincipal</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addResidencyToEntity">addResidencyToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPhoneType">getPhoneType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateEmail">inactivateEmail</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateCitizenship">inactivateCitizenship</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivatePhone">inactivatePhone</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateEmail">updateEmail</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateEntityTypeContactInfo">updateEntityTypeContactInfo</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateEntity">updateEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEmploymentStatus">getEmploymentStatus</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateEntityTypeContactInfo">inactivateEntityTypeContactInfo</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityByEmployeeId">getEntityByEmployeeId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateEmployment">inactivateEmployment</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updatePrincipal">updatePrincipal</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getAddressType">getAddressType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipalByPrincipalName">getPrincipalByPrincipalName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateResidency">updateResidency</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllExternalIdentifierTypeTypes">findAllExternalIdentifierTypeTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addEntityTypeContactInfoToEntity">addEntityTypeContactInfoToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateEthnicity">updateEthnicity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#createEntity">createEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateName">updateName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addEmailToEntity">addEmailToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipalsByEntityId">getPrincipalsByEntityId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getNameType">getNameType</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllPhoneTypes">findAllPhoneTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivatePrincipalByName">inactivatePrincipalByName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityByPrincipalName">getEntityByPrincipalName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addPrincipalToEntity">addPrincipalToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateEntity">inactivateEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updatePhone">updatePhone</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllAffiliationTypes">findAllAffiliationTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateAddress">inactivateAddress</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addPrivacyPreferencesToEntity">addPrivacyPreferencesToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateAffiliation">inactivateAffiliation</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrivacyPreferencesForPrincipalId">getPrivacyPreferencesForPrincipalId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateCitizenship">updateCitizenship</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityDefault">getEntityDefault</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addBioDemographicsToEntity">addBioDemographicsToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addEmploymentToEntity">addEmploymentToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityByPrincipalId">getEntityByPrincipalId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#inactivateName">inactivateName</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateBioDemographics">updateBioDemographics</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findEntities">findEntities</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updateVisa">updateVisa</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findPrincipals">findPrincipals</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#updatePrivacyPreferences">updatePrivacyPreferences</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addVisaToEntity">addVisaToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllEmailTypes">findAllEmailTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityDefaultByEmployeeId">getEntityDefaultByEmployeeId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getCitizenshipStatus">getCitizenshipStatus</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getDefaultNamesForPrincipalId">getDefaultNamesForPrincipalId</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addEthnicityToEntity">addEthnicityToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#addExternalIdentifierToEntity">addExternalIdentifierToEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllEntityTypes">findAllEntityTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllEmploymentTypes">findAllEmploymentTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntity">getEntity</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getPrincipals">getPrincipals</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#findAllNameTypes">findAllNameTypes</a></li>
+                <li><a href="VEFidentityServiceSoapBinding_methods.html#getEntityType">getEntityType</a></li>
+        </ul>
+    </body>
+</html>
+

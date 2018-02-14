@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.kuali.rice.kim.v2_0.CreateEntity;
 import org.kuali.rice.kim.v2_0.CreateEntityResponse;
+import org.kuali.rice.kim.v2_0.EntityNameType;
 import org.kuali.rice.kim.v2_0.EntityType;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeId;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeIdResponse;
@@ -26,9 +27,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import org.kuali.rice.kim.v2_0.ObjectFactory;
-import edu.bu.kuali.rice.kew.client.KSBCampusServiceClient;
 
+import edu.bu.kuali.rice.kew.client.KSBCampusServiceClient;
 @SpringBootApplication
 @RestController
 public class ReactAppApplication {
@@ -81,7 +81,10 @@ public class ReactAppApplication {
 
 		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
 		KSBCampusServiceClient client = new KSBCampusServiceClient();
+		ObjectFactory factory = new ObjectFactory();
 
+		EntityNameType nameType=	factory.createEntityNameType();
+		nameType.setEntityId("sss");
 		IdentityService svc = client.getCampusService(wsdlURL);
 		CreateEntity createNewEntity = new CreateEntity();
 	      EntityType type = new EntityType();

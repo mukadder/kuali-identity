@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://rice.kuali.org/kim/v2_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v2:addEmailToEntity>
+         <!--Optional:-->
+         <v2:email>
+            <!--Optional:-->
+            <v2:id>12345678</v2:id>
+            <!--Optional:-->
+            <v2:entityTypeCode>PERSON</v2:entityTypeCode>
+            <!--Optional:-->
+            <v2:entityId>U222222222</v2:entityId>
+            <!--Optional:-->
+            <v2:emailType>
+               <v2:code>WRK</v2:code>
+               <!--Optional:-->
+               <v2:name>Work</v2:name>
+               <!--Optional:-->
+               <v2:active>true</v2:active>
+               <!--Optional:-->
+               <!--Optional:-->
+               <!--You may enter ANY elements at this point-->
+            </v2:emailType>
+            <!--Optional:-->
+            <v2:emailAddress>RAVISHASTRI@BU.EDU</v2:emailAddress>
+            <!--Optional:-->
+            <v2:emailAddressUnmasked>RAVISHASTRI@BU.EDU</v2:emailAddressUnmasked>
+            <v2:suppressEmail>false</v2:suppressEmail>
+            <v2:defaultValue>true</v2:defaultValue>
+            <v2:active>true</v2:active>
+            <!--Optional:-->
+            <!--Optional:-->
+            <!--You may enter ANY elements at this point-->
+         </v2:email>
+      </v2:addEmailToEntity>
+   </soapenv:Body>
+</soapenv:Envelope>

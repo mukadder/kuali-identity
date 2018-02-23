@@ -1,0 +1,59 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Header>
+      <wsse:Security soap:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <ds:Signature Id="SIG-02b38320-d103-468c-92d8-f7513586deda" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+            <ds:SignedInfo>
+               <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+                  <ec:InclusiveNamespaces PrefixList="soap" xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+               </ds:CanonicalizationMethod>
+               <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+               <ds:Reference URI="#id-5a80a246-8542-43d8-8556-ba8dd31ee495">
+                  <ds:Transforms>
+                     <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                  <ds:DigestValue>dSH8sFrhL/8dw6DnJ5J2kl//v/M=</ds:DigestValue>
+               </ds:Reference>
+            </ds:SignedInfo>
+            <ds:SignatureValue>OeqghsbbVZXnpaw6dI2IsizrBVKI3TZqQOR1ADw/d2jEij8ijQ2yY/qh69sXQZ0hjDM8zFyLoUwHmp5rwQUaJNWvSdlxr7SRjNXcF0DXdMFGb6hCDFqXrSsapKB1dZC2DdDaG4PXSJObKwa8e0N3y8hmUr+bi/Y/IyC0VxgxYGg=</ds:SignatureValue>
+            <ds:KeyInfo Id="KI-22250d1b-b9d1-44b8-90a0-696457ed737b">
+               <wsse:SecurityTokenReference wsu:Id="STR-95467be6-f67f-4708-bf36-973e7e9ea096">
+                  <ds:X509Data>
+                     <ds:X509IssuerSerial>
+                        <ds:X509IssuerName>CN=rice</ds:X509IssuerName>
+                        <ds:X509SerialNumber>1192039189</ds:X509SerialNumber>
+                     </ds:X509IssuerSerial>
+                  </ds:X509Data>
+               </wsse:SecurityTokenReference>
+            </ds:KeyInfo>
+         </ds:Signature>
+      </wsse:Security>
+   </soap:Header>
+   <soap:Body wsu:Id="id-5a80a246-8542-43d8-8556-ba8dd31ee495" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <ns3:createEntityResponse xmlns:ns2="http://rice.kuali.org/core/v2_0" xmlns:ns3="http://rice.kuali.org/kim/v2_0">
+         <ns3:entity>
+            <ns3:id>10076</ns3:id>
+            <ns3:principals>
+               <ns3:principal>
+                  <ns3:principalId>111</ns3:principalId>
+                  <ns3:principalName>kodarck</ns3:principalName>
+                  <ns3:entityId>10076</ns3:entityId>
+                  <ns3:active>true</ns3:active>
+                  <ns3:objectId>49da3748-abf4-4785-b257-e63b1cca424b</ns3:objectId>
+               </ns3:principal>
+            </ns3:principals>
+            <ns3:entityTypeContactInfos/>
+            <ns3:externalIdentifiers/>
+            <ns3:affiliations/>
+            <ns3:names/>
+            <ns3:employmentInformation/>
+            <ns3:citizenships/>
+            <ns3:ethnicities/>
+            <ns3:residencies/>
+            <ns3:visas/>
+            <ns3:objectId>d4da8100-3656-4d9a-b703-b8e96127b759</ns3:objectId>
+            <ns3:active>false</ns3:active>
+         </ns3:entity>
+      </ns3:createEntityResponse>
+   </soap:Body>
+</soap:Envelope>

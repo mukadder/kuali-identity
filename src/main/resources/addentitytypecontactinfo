@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://rice.kuali.org/kim/v2_0">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <v2:addEntityTypeContactInfoToEntity>
+        <v2:entityTypeContactInfo>
+            <v2:entityId>U222222222</v2:entityId>
+            <v2:entityTypeCode>PERSON</v2:entityTypeCode>
+            <!--Optional:-->
+            <v2:entityType>
+                <v2:code>PERSON</v2:code>
+                <!--Optional:-->
+                <v2:name>PERSON</v2:name>
+                <!--Optional:-->
+                <v2:sortCode>01</v2:sortCode>
+                <v2:active>true</v2:active>
+                <!--Optional:-->
+                <!--Optional:-->
+                <!--You may enter ANY elements at this point-->
+            </v2:entityType>
+        </v2:entityTypeContactInfo>  </v2:addEntityTypeContactInfoToEntity>  </soapenv:Body>
+</soapenv:Envelope>

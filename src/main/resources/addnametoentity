@@ -1,0 +1,53 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://rice.kuali.org/kim/v2_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v2:addNameToEntity>
+         <!--Optional:-->
+         <v2:name>
+            <!--Optional:-->
+            <v2:id>12345666</v2:id>
+            <!--Optional:-->
+            <v2:entityId>U222222222</v2:entityId>
+            <!--Optional:-->
+            <v2:nameType>
+               <v2:code>PRFR</v2:code>
+               <!--Optional:-->
+               <v2:name>Preferred</v2:name>
+               <!--Optional:-->
+               <v2:active>true</v2:active>
+               <!--Optional:-->
+               <!--Optional:-->
+               <!--You may enter ANY elements at this point-->
+            </v2:nameType>
+            <!--Optional:-->
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:firstName>Ravi</v2:firstName>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:lastName>Shastri</v2:lastName>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:compositeName>Shastri,Ravi</v2:compositeName>
+            <!--Optional:-->
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:firstNameUnmasked>Ravi</v2:firstNameUnmasked>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:lastNameUnmasked>Shastri</v2:lastNameUnmasked>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:compositeNameUnmasked>Shastri,Ravi</v2:compositeNameUnmasked>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:suppressName>false</v2:suppressName>
+            <v2:defaultValue>true</v2:defaultValue>
+            <v2:active>true</v2:active>
+            <!--Optional:-->
+            <!--Optional:-->
+            <!--You may enter ANY elements at this point-->
+         </v2:name>
+      </v2:addNameToEntity>
+   </soapenv:Body>
+</soapenv:Envelope>

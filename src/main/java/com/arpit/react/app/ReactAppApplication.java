@@ -3,16 +3,27 @@ package com.arpit.react.app;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Unmarshaller;
+
+import org.json.JSONObject;
+import org.kuali.rice.kim.v2_0.AddPrincipalToEntity;
+import org.kuali.rice.kim.v2_0.AddPrincipalToEntityResponse;
 import org.kuali.rice.kim.v2_0.CreateEntity;
 import org.kuali.rice.kim.v2_0.CreateEntityResponse;
 import org.kuali.rice.kim.v2_0.EntityNameType;
 import org.kuali.rice.kim.v2_0.EntityType;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeId;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeIdResponse;
+import org.kuali.rice.kim.v2_0.GetPrincipal;
+import org.kuali.rice.kim.v2_0.GetPrincipals;
+import org.kuali.rice.kim.v2_0.GetPrincipalsResponse;
 import org.kuali.rice.kim.v2_0.IdentityService;
 import org.kuali.rice.kim.v2_0.IdentityService_Service;
 import org.kuali.rice.kim.v2_0.ObjectFactory;
+import org.kuali.rice.kim.v2_0.PrincipalType;
 import org.kuali.rice.kim.v2_0.RiceIllegalArgumentException;
 import org.kuali.rice.kim.v2_0.RiceIllegalStateException;
 import org.springframework.boot.SpringApplication;
@@ -28,6 +39,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import edu.bu.identityApi.Entity;
+import edu.bu.identityApi.Principals;
 import edu.bu.kuali.rice.kew.client.KSBCampusServiceClient;
 @SpringBootApplication
 @RestController
@@ -73,29 +88,24 @@ public class ReactAppApplication {
 				test.getEntity().getPrincipals().getPrincipal().get(0).getPrincipalName(),
 				test.getEntity().getNames().getName().get(0).getFirstName().toString()));
 
-		return new ResponseEntity(employeeList.get(0), HttpStatus.OK);
+		return new ResponseEntity(test, HttpStatus.OK);
 	}
 
 	@PostMapping(value = "/employee/createEmployee")
-	public ResponseEntity createEmployee(@RequestBody Employee employee) throws RiceIllegalArgumentException, RiceIllegalStateException {
+	public ResponseEntity createEmployee(@RequestBody  Entity entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
 
 		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
 		KSBCampusServiceClient client = new KSBCampusServiceClient();
 		ObjectFactory factory = new ObjectFactory();
+	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
+	    final EntityType pojo = mapper.convertValue(entity, EntityType.class);
 
-		EntityNameType nameType=	factory.createEntityNameType();
-		nameType.setEntityId("sss");
+		CreateEntity createNewEntity = factory.createCreateEntity();
+		createNewEntity.setEntity(pojo);
 		IdentityService svc = client.getCampusService(wsdlURL);
-		CreateEntity createNewEntity = new CreateEntity();
-	      EntityType type = new EntityType();
 
-	      type.setActive(true);
-	     // type.setAffiliations(value);
-	      createNewEntity.setEntity(type);
-
-	      CreateEntityResponse  response= svc.createEntity(createNewEntity);
-
-		return new ResponseEntity(employee, HttpStatus.OK);
+		CreateEntityResponse response = svc.createEntity(createNewEntity);
+		return new ResponseEntity(response, HttpStatus.OK);
 	}
 
 	@DeleteMapping("/employee/{id}")

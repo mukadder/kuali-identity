@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://rice.kuali.org/kim/v2_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v2:addAffiliationToEntity>
+         <!--Optional:-->
+         <v2:affiliation>
+            <!--Optional:-->
+            <v2:id>0002</v2:id>
+            <!--Optional:-->
+            <v2:entityId>U034567</v2:entityId>
+            <!--Optional:-->
+            <v2:affiliationType>
+               <v2:code>0002</v2:code>
+               <!--Optional:-->
+               <v2:name>NREP-Staff</v2:name>
+               <!--Optional:-->
+               <v2:sortCode>11</v2:sortCode>
+               <v2:active>true</v2:active>
+               <v2:employmentAffiliationType></v2:employmentAffiliationType>
+               <!--Optional:-->
+               <v2:versionNumber></v2:versionNumber>
+               <!--Optional:-->
+               <v2:objectId></v2:objectId>
+               <!--You may enter ANY elements at this point-->
+            </v2:affiliationType>
+            <!--Optional:-->
+            <v2:campusCode>10</v2:campusCode>
+            <v2:defaultValue>true</v2:defaultValue>
+            <v2:active>true</v2:active>
+            <!--Optional:-->
+            <v2:versionNumber>1</v2:versionNumber>
+            <!--Optional:-->
+            <v2:objectId></v2:objectId>
+            <!--You may enter ANY elements at this point-->
+         </v2:affiliation>
+      </v2:addAffiliationToEntity>
+   </soapenv:Body>
+</soapenv:Envelope>

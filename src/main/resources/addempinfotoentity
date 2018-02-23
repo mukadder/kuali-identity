@@ -1,0 +1,75 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v2="http://rice.kuali.org/kim/v2_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v2:addEmploymentToEntity>
+         <!--Optional:-->
+         <v2:employment>
+            <!--Optional:-->
+            <v2:id>1234456</v2:id>
+            <!--Optional:-->
+            <v2:entityId>U222222222</v2:entityId>
+            <!--Optional:-->
+            <v2:employeeId>U222222222</v2:employeeId>
+            <!--Optional:-->
+            <v2:employmentRecordId>2</v2:employmentRecordId>
+            <!--Optional:-->
+            <v2:entityAffiliation>
+               <!--Optional:-->
+               <v2:id>123456</v2:id>
+               <!--Optional:-->
+               <v2:entityId>U222222222</v2:entityId>
+               <!--Optional:-->
+               <v2:affiliationType>
+                  <v2:code>0002</v2:code>
+                  <!--Optional:-->
+                  <v2:name>NREP-Staff</v2:name>
+                  <!--Optional:-->
+                  <v2:active>true</v2:active>
+                  <v2:employmentAffiliationType>false</v2:employmentAffiliationType>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--You may enter ANY elements at this point-->
+               </v2:affiliationType>
+               <!--Optional:-->
+               <v2:campusCode>10</v2:campusCode>
+               <v2:defaultValue>true</v2:defaultValue>
+               <v2:active>true</v2:active>
+               <!--Optional:-->
+               <!--Optional:-->
+               <!--You may enter ANY elements at this point-->
+            </v2:entityAffiliation>
+            <!--Optional:-->
+            <v2:employeeStatus>
+               <v2:code>3</v2:code>
+               <!--Optional:-->
+               <v2:name>Active</v2:name>
+               <!--Optional:-->
+               <v2:active>true</v2:active>
+               <!--Optional:-->
+               <!--Optional:-->
+               <!--You may enter ANY elements at this point-->
+            </v2:employeeStatus>
+            <!--Optional:-->
+            <v2:employeeType>
+               <v2:code>6</v2:code>
+               <!--Optional:-->
+               <v2:name>Staff-Exempt FT</v2:name>
+               <!--Optional:-->
+               <v2:active>true</v2:active>
+               <!--Optional:-->
+               <!--Optional:-->
+               <!--You may enter ANY elements at this point-->
+            </v2:employeeType>
+            <!--Optional:-->
+            <v2:primaryDepartmentCode>1510500000</v2:primaryDepartmentCode>
+            <!--Optional:-->
+            <v2:baseSalaryAmount>0.00</v2:baseSalaryAmount>
+            <v2:primary>true</v2:primary>
+            <!--Optional:-->
+            <!--Optional:-->
+            <v2:active>?</v2:active>
+            <!--You may enter ANY elements at this point-->
+         </v2:employment>
+      </v2:addEmploymentToEntity>
+   </soapenv:Body>
+</soapenv:Envelope>

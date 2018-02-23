@@ -1,0 +1,516 @@
+{
+
+        "id": "U171169718",
+        "principals": {
+            "principal": [
+                {
+                    "principalId": "U171169718",
+                    "principalName": "mukadd3er",
+                    "entityId": "U171169718",
+                    "active": true,
+                    "versionNumber": 5,
+                    "objectId": "70588ACD-8EAD-F2FE-66DC-8F0966C45AF7",
+                    "any": []
+                }
+            ]
+        },
+        "entityTypeContactInfos": {
+            "entityTypeContactInfo": [
+                {
+                    "entityId": "U171169718",
+                    "entityTypeCode": "PERSON",
+                    "entityType": {
+                        "code": "PERSON",
+                        "name": "Person",
+                        "sortCode": "01",
+                        "active": true,
+                        "versionNumber": 1,
+                        "objectId": "5B97C50B03886110E0404F8189D85213",
+                        "any": []
+                    },
+                    "addresses": {
+                        "address": [
+                            {
+                                "id": "15774",
+                                "entityTypeCode": "PERSON",
+                                "entityId": "U17116978",
+                                "addressType": {
+                                    "code": "WRK",
+                                    "name": "Work",
+                                    "sortCode": "a",
+                                    "active": true,
+                                    "versionNumber": 1,
+                                    "objectId": "5B97C50B03726110E0404F8189D85213",
+                                    "any": []
+                                },
+                                "attentionLine": null,
+                                "line1": "Administrative Offices - Buick",
+                                "line2": "Boston University",
+                                "line3": "25 Buick St",
+                                "city": "Boston",
+                                "stateProvinceCode": "MA",
+                                "postalCode": "02215",
+                                "countryCode": "US",
+                                "attentionLineUnmasked": null,
+                                "line1Unmasked": "Administrative Offices - Buick",
+                                "line2Unmasked": "Boston University",
+                                "line3Unmasked": "25 Buick St",
+                                "cityUnmasked": "Boston",
+                                "stateProvinceCodeUnmasked": "MA",
+                                "postalCodeUnmasked": "02215",
+                                "countryCodeUnmasked": "US",
+                                "addressFormat": null,
+                                "modifiedDate": null,
+                                "validatedDate": null,
+                                "validated": false,
+                                "noteMessage": null,
+                                "suppressAddress": false,
+                                "defaultValue": true,
+                                "active": true,
+                                "versionNumber": 17,
+                                "objectId": "1a52840b-254e-4be3-a916-52a95db03a55",
+                                "any": []
+                            }
+                        ]
+                    },
+                    "emailAddresses": {
+                        "emailAddress": [
+                            {
+                                "id": "69162",
+                                "entityTypeCode": "PERSON",
+                                "entityId": "U222222222",
+                                "emailType": {
+                                    "code": "WRK",
+                                    "name": "Work",
+                                    "sortCode": "a",
+                                    "active": true,
+                                    "versionNumber": 1,
+                                    "objectId": "5B97C50B03796110E0404F8189D85213",
+                                    "any": []
+                                },
+                                "emailAddress": "MUKADDER@BU.EDU",
+                                "emailAddressUnmasked": "MUKADDER@BU.EDU",
+                                "suppressEmail": false,
+                                "defaultValue": true,
+                                "active": true,
+                                "versionNumber": 21,
+                                "objectId": "d580af76-c0b6-4134-8730-8e2782decf79",
+                                "any": []
+                            }
+                        ]
+                    },
+                    "phoneNumbers": {
+                        "phoneNumber": [
+                            {
+                                "id": "658489",
+                                "entityTypeCode": "PERSON",
+                                "entityId": "U17116978",
+                                "phoneType": {
+                                    "code": "WRK",
+                                    "name": "Work",
+                                    "sortCode": "a",
+                                    "active": true,
+                                    "versionNumber": 1,
+                                    "objectId": "5B97C50B03936110E0404F8189D85213",
+                                    "any": []
+                                },
+                                "countryCode": null,
+                                "phoneNumber": "617-353-9500",
+                                "extensionNumber": null,
+                                "formattedPhoneNumber": "617-353-9500",
+                                "countryCodeUnmasked": null,
+                                "phoneNumberUnmasked": "617-353-9500",
+                                "extensionNumberUnmasked": null,
+                                "formattedPhoneNumberUnmasked": "617-353-9500",
+                                "suppressPhone": false,
+                                "defaultValue": false,
+                                "active": true,
+                                "versionNumber": 21,
+                                "objectId": "d07c1474-2de9-4763-b6bd-1818e7764d58",
+                                "any": []
+                            },
+                            {
+                                "id": "660822",
+                                "entityTypeCode": "PERSON",
+                                "entityId": "U17116978",
+                                "phoneType": {
+                                    "code": "WRK",
+                                    "name": "Work",
+                                    "sortCode": "a",
+                                    "active": true,
+                                    "versionNumber": 1,
+                                    "objectId": "5B97C50B03936110E0404F8189D85213",
+                                    "any": []
+                                },
+                                "countryCode": null,
+                                "phoneNumber": "617-358-0196",
+                                "extensionNumber": null,
+                                "formattedPhoneNumber": "617-358-0196",
+                                "countryCodeUnmasked": null,
+                                "phoneNumberUnmasked": "617-358-0196",
+                                "extensionNumberUnmasked": null,
+                                "formattedPhoneNumberUnmasked": "617-358-0196",
+                                "suppressPhone": false,
+                                "defaultValue": true,
+                                "active": true,
+                                "versionNumber": 20,
+                                "objectId": "00da586e-624c-42c9-8732-93ab8146238e",
+                                "any": []
+                            }
+                        ]
+                    },
+                    "defaultAddress": {
+                        "id": "15774",
+                        "entityTypeCode": "PERSON",
+                        "entityId": "U17116978",
+                        "addressType": {
+                            "code": "WRK",
+                            "name": "Work",
+                            "sortCode": "a",
+                            "active": true,
+                            "versionNumber": 1,
+                            "objectId": "5B97C50B03726110E0404F8189D85213",
+                            "any": []
+                        },
+                        "attentionLine": null,
+                        "line1": "Administrative Offices - Buick",
+                        "line2": "Boston University",
+                        "line3": "25 Buick St",
+                        "city": "Boston",
+                        "stateProvinceCode": "MA",
+                        "postalCode": "02215",
+                        "countryCode": "US",
+                        "attentionLineUnmasked": null,
+                        "line1Unmasked": "Administrative Offices - Buick",
+                        "line2Unmasked": "Boston University",
+                        "line3Unmasked": "25 Buick St",
+                        "cityUnmasked": "Boston",
+                        "stateProvinceCodeUnmasked": "MA",
+                        "postalCodeUnmasked": "02215",
+                        "countryCodeUnmasked": "US",
+                        "addressFormat": null,
+                        "modifiedDate": null,
+                        "validatedDate": null,
+                        "validated": false,
+                        "noteMessage": null,
+                        "suppressAddress": false,
+                        "defaultValue": true,
+                        "active": true,
+                        "versionNumber": 17,
+                        "objectId": "1a52840b-254e-4be3-a916-52a95db03a55",
+                        "any": []
+                    },
+                    "defaultEmailAddress": {
+                        "id": "69162",
+                        "entityTypeCode": "PERSON",
+                        "entityId": "U17116978",
+                        "emailType": {
+                            "code": "WRK",
+                            "name": "Work",
+                            "sortCode": "a",
+                            "active": true,
+                            "versionNumber": 1,
+                            "objectId": "5B97C50B03796110E0404F8189D85213",
+                            "any": []
+                        },
+                        "emailAddress": "MUKADDER@BU.EDU",
+                        "emailAddressUnmasked": "MUKADDER@BU.EDU",
+                        "suppressEmail": false,
+                        "defaultValue": true,
+                        "active": true,
+                        "versionNumber": 21,
+                        "objectId": "d580af76-c0b6-4134-8730-8e2782decf79",
+                        "any": []
+                    },
+                    "defaultPhoneNumber": {
+                        "id": "660822",
+                        "entityTypeCode": "PERSON",
+                        "entityId": "U171169718",
+                        "phoneType": {
+                            "code": "WRK",
+                            "name": "Work",
+                            "sortCode": "a",
+                            "active": true,
+                            "versionNumber": 1,
+                            "objectId": "5B97C50B03936110E0404F8189D85213",
+                            "any": []
+                        },
+                        "countryCode": null,
+                        "phoneNumber": "617-358-0196",
+                        "extensionNumber": null,
+                        "formattedPhoneNumber": "617-358-0196",
+                        "countryCodeUnmasked": null,
+                        "phoneNumberUnmasked": "617-358-0196",
+                        "extensionNumberUnmasked": null,
+                        "formattedPhoneNumberUnmasked": "617-358-0196",
+                        "suppressPhone": false,
+                        "defaultValue": true,
+                        "active": true,
+                        "versionNumber": 20,
+                        "objectId": "00da586e-624c-42c9-8732-93ab8146238e",
+                        "any": []
+                    },
+                    "versionNumber": 21,
+                    "objectId": "f5c6210f-ab28-42ed-a39e-4f824386da51",
+                    "active": true,
+                    "any": []
+                }
+            ]
+        },
+        "externalIdentifiers": {
+            "externalIdentifier": []
+        },
+        "affiliations": {
+            "affiliation": [
+                {
+                    "id": "47537",
+                    "entityId": "U171169718",
+                    "affiliationType": {
+                        "code": "0002",
+                        "name": "NREP-Staff",
+                        "sortCode": null,
+                        "active": true,
+                        "employmentAffiliationType": false,
+                        "versionNumber": 1,
+                        "objectId": "A67AFBBB360068C3E04005950AF118A5",
+                        "any": []
+                    },
+                    "campusCode": "10",
+                    "defaultValue": true,
+                    "active": true,
+                    "versionNumber": 21,
+                    "objectId": "74142e32-a432-48af-8245-f0f2e756775e",
+                    "any": []
+                }
+            ]
+        },
+        "names": {
+            "name": [
+                {
+                    "id": "48559",
+                    "entityId": "U222222222",
+                    "nameType": {
+                        "code": "PRFR",
+                        "name": "Preferred",
+                        "sortCode": "b",
+                        "active": true,
+                        "versionNumber": 1,
+                        "objectId": "5B97C50B03866110E0404F8189D85213",
+                        "any": []
+                    },
+                    "namePrefix": null,
+                    "nameTitle": null,
+                    "firstName": "HITESH",
+                    "middleName": null,
+                    "lastName": "TARA",
+                    "nameSuffix": null,
+                    "compositeName": "TARA, HITESH",
+                    "namePrefixUnmasked": null,
+                    "nameTitleUnmasked": null,
+                    "firstNameUnmasked": "HITESH",
+                    "middleNameUnmasked": null,
+                    "lastNameUnmasked": "TARA",
+                    "nameSuffixUnmasked": null,
+                    "compositeNameUnmasked": "TARA, HITESH",
+                    "noteMessage": null,
+                    "nameChangedDate": null,
+                    "suppressName": false,
+                    "defaultValue": true,
+                    "active": true,
+                    "versionNumber": 21,
+                    "objectId": "b6e25e31-2f97-47df-858f-dd8b2619c93f",
+                    "any": []
+                }
+            ]
+        },
+        "employmentInformation": {
+            "employment": [
+                {
+                    "id": "56843",
+                    "entityId": "U222222222",
+                    "employeeId": "U222222222",
+                    "employmentRecordId": "2",
+                    "entityAffiliation": {
+                        "id": "47537",
+                        "entityId": "U171169718",
+                        "affiliationType": {
+                            "code": "0002",
+                            "name": "NREP-Staff",
+                            "sortCode": null,
+                            "active": true,
+                            "employmentAffiliationType": false,
+                            "versionNumber": 1,
+                            "objectId": "A67AFBBB360068C3E04005950AF118A5",
+                            "any": []
+                        },
+                        "campusCode": "10",
+                        "defaultValue": true,
+                        "active": true,
+                        "versionNumber": 21,
+                        "objectId": "74142e32-a432-48af-8245-f0f2e756775e",
+                        "any": []
+                    },
+                    "employeeStatus": {
+                        "code": "3",
+                        "name": "Active",
+                        "sortCode": null,
+                        "active": true,
+                        "versionNumber": 1,
+                        "objectId": "A67AFC7A40D37810E04005950AF118BC",
+                        "any": []
+                    },
+                    "employeeType": {
+                        "code": "6",
+                        "name": "Staff-Exempt FT",
+                        "sortCode": null,
+                        "active": true,
+                        "versionNumber": 1,
+                        "objectId": "A67AFC9C1E046ED4E04005950AF118D4",
+                        "any": []
+                    },
+                    "primaryDepartmentCode": "1510500000",
+                    "baseSalaryAmount": "0.00",
+                    "primary": true,
+                    "versionNumber": 21,
+                    "objectId": "c0893f64-3c29-4ef6-ab02-c6ba7af3b23b",
+                    "active": true,
+                    "any": []
+                }
+            ]
+        },
+        "privacyPreferences": {
+            "entityId": "U171169718",
+            "suppressName": false,
+            "suppressAddress": false,
+            "suppressEmail": false,
+            "suppressPhone": false,
+            "suppressPersonal": false,
+            "versionNumber": 4,
+            "objectId": "C8A3B7C9-DF5E-BB54-EBE9-F4CBB85BB3FA",
+            "any": []
+        },
+        "bioDemographics": null,
+        "citizenships": {
+            "citizenship": []
+        },
+        "primaryEmployment": {
+            "id": "56843",
+            "entityId": "U171169718",
+            "employeeId": "U171169718",
+            "employmentRecordId": "2",
+            "entityAffiliation": {
+                "id": "47537",
+                "entityId": "U17116978",
+                "affiliationType": {
+                    "code": "0002",
+                    "name": "NREP-Staff",
+                    "sortCode": null,
+                    "active": true,
+                    "employmentAffiliationType": false,
+                    "versionNumber": 1,
+                    "objectId": "A67AFBBB360068C3E04005950AF118A5",
+                    "any": []
+                },
+                "campusCode": "10",
+                "defaultValue": true,
+                "active": true,
+                "versionNumber": 21,
+                "objectId": "74142e32-a432-48af-8245-f0f2e756775e",
+                "any": []
+            },
+            "employeeStatus": {
+                "code": "3",
+                "name": "Active",
+                "sortCode": null,
+                "active": true,
+                "versionNumber": 1,
+                "objectId": "A67AFC7A40D37810E04005950AF118BC",
+                "any": []
+            },
+            "employeeType": {
+                "code": "6",
+                "name": "Staff-Exempt FT",
+                "sortCode": null,
+                "active": true,
+                "versionNumber": 1,
+                "objectId": "A67AFC9C1E046ED4E04005950AF118D4",
+                "any": []
+            },
+            "primaryDepartmentCode": "1510500000",
+            "baseSalaryAmount": "0.00",
+            "primary": true,
+            "versionNumber": 21,
+            "objectId": "c0893f64-3c29-4ef6-ab02-c6ba7af3b23b",
+            "active": true,
+            "any": []
+        },
+        "defaultAffiliation": {
+            "id": "47537",
+            "entityId": "U171169718",
+            "affiliationType": {
+                "code": "0002",
+                "name": "NREP-Staff",
+                "sortCode": null,
+                "active": true,
+                "employmentAffiliationType": false,
+                "versionNumber": 1,
+                "objectId": "A67AFBBB360068C3E04005950AF118A5",
+                "any": []
+            },
+            "campusCode": "10",
+            "defaultValue": true,
+            "active": true,
+            "versionNumber": 21,
+            "objectId": "74142e32-a432-48af-8245-f0f2e756775e",
+            "any": []
+        },
+        "defaultName": {
+            "id": "48559",
+            "entityId": "U171169718",
+            "nameType": {
+                "code": "PRFR",
+                "name": "Preferred",
+                "sortCode": "b",
+                "active": true,
+                "versionNumber": 1,
+                "objectId": "5B97C50B03866110E0404F8189D85213",
+                "any": []
+            },
+            "namePrefix": null,
+            "nameTitle": null,
+            "firstName": "HITESH",
+            "middleName": null,
+            "lastName": "TARA",
+            "nameSuffix": null,
+            "compositeName": "TARA, HITESH",
+            "namePrefixUnmasked": null,
+            "nameTitleUnmasked": null,
+            "firstNameUnmasked": "HITESH",
+            "middleNameUnmasked": null,
+            "lastNameUnmasked": "TARA",
+            "nameSuffixUnmasked": null,
+            "compositeNameUnmasked": "TARA, HITESH",
+            "noteMessage": null,
+            "nameChangedDate": null,
+            "suppressName": false,
+            "defaultValue": true,
+            "active": true,
+            "versionNumber": 21,
+            "objectId": "b6e25e31-2f97-47df-858f-dd8b2619c93f",
+            "any": []
+        },
+        "ethnicities": {
+            "ethnicity": []
+        },
+        "residencies": {
+            "residency": []
+        },
+        "visas": {
+            "visa": []
+        },
+        "versionNumber": 21,
+        "objectId": "e5425c4e-381d-498b-b311-9ba6fd79311a",
+        "active": true,
+        "any": []
+
+}

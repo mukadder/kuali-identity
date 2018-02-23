@@ -1,0 +1,44 @@
+{
+    "entity": {
+        "id": "10013",
+        "principals": {
+            "principal": []
+        },
+        "entityTypeContactInfos": {
+            "entityTypeContactInfo": []
+        },
+        "externalIdentifiers": {
+            "externalIdentifier": []
+        },
+        "affiliations": {
+            "affiliation": []
+        },
+        "names": {
+            "name": []
+        },
+        "employmentInformation": {
+            "employment": []
+        },
+        "privacyPreferences": null,
+        "bioDemographics": null,
+        "citizenships": {
+            "citizenship": []
+        },
+        "primaryEmployment": null,
+        "defaultAffiliation": null,
+        "defaultName": null,
+        "ethnicities": {
+            "ethnicity": []
+        },
+        "residencies": {
+            "residency": []
+        },
+        "visas": {
+            "visa": []
+        },
+        "versionNumber": null,
+        "objectId": "28f8c75b-267f-49e7-915c-3f3514951e6c",
+        "active": true,
+        "any": []
+    }
+}

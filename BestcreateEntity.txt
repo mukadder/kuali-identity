@@ -3,9 +3,9 @@
   "principals": {
     "principal": [
       {
-        "principalId": "k345666",
-        "principalName": "k345666",
-        "entityId": "k345666",
+        "principalId": "t4444444",
+        "principalName": "t4444444",
+        "entityId": "t4444444",
         "active": true,
         "any": []
       }
@@ -14,7 +14,7 @@
   "entityTypeContactInfos": {
     "entityTypeContactInfo": [
       {
-        "entityId": "k345666",
+        "entityId": "t4444444",
         "entityTypeCode": "PERSON",
         "entityType": {
           "code": "PERSON",
@@ -27,7 +27,7 @@
           "address": [
             {
               "entityTypeCode": "PERSON",
-              "entityId": "k345666",
+              "entityId": "t4444444",
               "addressType": {
                 "code": "WRK",
                 "name": "Work",
@@ -67,7 +67,7 @@
           "emailAddress": [
             {
               "entityTypeCode": "PERSON",
-              "entityId": "k345666",
+              "entityId": "t4444444",
               "emailType": {
                 "code": "WRK",
                 "name": "Work",
@@ -76,8 +76,8 @@
                 "versionNumber": 1,
                 "any": []
               },
-              "emailAddress": "k345666@BU.EDU",
-              "emailAddressUnmasked": "k345666@BU.EDU",
+              "emailAddress": "t4444444@BU.EDU",
+              "emailAddressUnmasked": "t4444444@BU.EDU",
               "suppressEmail": false,
               "defaultValue": true,
               "active": true,
@@ -89,7 +89,7 @@
           "phoneNumber": [
             {
               "entityTypeCode": "PERSON",
-              "entityId": "k345666",
+              "entityId": "t4444444",
               "phoneType": {
                 "code": "WRK",
                 "name": "Work",
@@ -112,7 +112,7 @@
             },
             {
               "entityTypeCode": "PERSON",
-              "entityId": "k345666",
+              "entityId": "t4444444",
               "phoneType": {
                 "code": "WRK",
                 "name": "Work",
@@ -137,7 +137,7 @@
         },
         "defaultAddress": {
           "entityTypeCode": "PERSON",
-          "entityId": "k345666",
+          "entityId": "t4444444",
           "addressType": {
             "code": "WRK",
             "name": "Work",
@@ -173,7 +173,7 @@
         },
         "defaultEmailAddress": {
           "entityTypeCode": "PERSON",
-          "entityId": "k345666",
+          "entityId": "t4444444",
           "emailType": {
             "code": "WRK",
             "name": "Work",
@@ -182,8 +182,8 @@
             "versionNumber": 1,
             "any": []
           },
-          "emailAddress": "MUKADDER@BU.EDU",
-          "emailAddressUnmasked": "MUKADDER@BU.EDU",
+          "emailAddress": "rakesh@BU.EDU",
+          "emailAddressUnmasked": "rakesh@BU.EDU",
           "suppressEmail": false,
           "defaultValue": true,
           "active": true,
@@ -191,7 +191,7 @@
         },
         "defaultPhoneNumber": {
           "entityTypeCode": "PERSON",
-          "entityId": "U171169718",
+          "entityId": "t4444444",
           "phoneType": {
             "code": "WRK",
             "name": "Work",
@@ -223,14 +223,13 @@
   "affiliations": {
     "affiliation": [
       {
-        "entityId": "k345666",
+        "entityId": "t4444444",
         "affiliationType": {
           "code": "0002",
           "name": "NREP-Staff",
           "sortCode": null,
           "active": true,
           "employmentAffiliationType": false,
-          "versionNumber": 1,
           "any": []
         },
         "campusCode": "10",
@@ -243,7 +242,7 @@
   "names": {
     "name": [
       {
-        "entityId": "k345666",
+        "entityId": "t4444444",
         "nameType": {
           "code": "PRFR",
           "name": "Preferred",
@@ -253,18 +252,18 @@
         },
         "namePrefix": null,
         "nameTitle": null,
-        "firstName": "HITESH",
+        "firstName": "rakesh",
         "middleName": null,
-        "lastName": "TARA",
+        "lastName": "rakesh",
         "nameSuffix": null,
-        "compositeName": "TARA, HITESH",
+        "compositeName": "rakesh, rakesh",
         "namePrefixUnmasked": null,
         "nameTitleUnmasked": null,
-        "firstNameUnmasked": "HITESH",
+        "firstNameUnmasked": "rakesh",
         "middleNameUnmasked": null,
-        "lastNameUnmasked": "TARA",
+        "lastNameUnmasked": "rakesh",
         "nameSuffixUnmasked": null,
-        "compositeNameUnmasked": "TARA, HITESH",
+        "compositeNameUnmasked": "rakesh, rakesh",
         "noteMessage": null,
         "nameChangedDate": null,
         "suppressName": false,
@@ -277,12 +276,11 @@
   "employmentInformation": {
     "employment": [
       {
-        "entityId": "k345666",
-        "employeeId": "k345666",
+        "entityId": "t4444444",
+        "employeeId": "t4444444",
         "employmentRecordId": "2",
         "entityAffiliation": {
-          "id": "47537",
-          "entityId": "k345666",
+          "entityId": "t4444444",
           "affiliationType": {
             "code": "0002",
             "name": "NREP-Staff",
@@ -320,7 +318,7 @@
     ]
   },
   "privacyPreferences": {
-    "entityId": "k345666",
+    "entityId": "t4444444",
     "suppressName": false,
     "suppressAddress": false,
     "suppressEmail": false,
@@ -333,11 +331,11 @@
     "citizenship": []
   },
   "primaryEmployment": {
-    "entityId": "k345666",
-    "employeeId": "k345666",
+    "entityId": "t4444444",
+    "employeeId": "t4444444",
     "employmentRecordId": "2",
     "entityAffiliation": {
-      "entityId": "k345666",
+      "entityId": "t4444444",
       "affiliationType": {
         "code": "0002",
         "name": "NREP-Staff",
@@ -372,7 +370,7 @@
     "any": []
   },
   "defaultAffiliation": {
-    "entityId": "k345666",
+    "entityId": "t4444444",
     "affiliationType": {
       "code": "0002",
       "name": "NREP-Staff",
@@ -387,7 +385,7 @@
     "any": []
   },
   "defaultName": {
-    "entityId": "k345666",
+    "entityId": "t4444444",
     "nameType": {
       "code": "PRFR",
       "name": "Preferred",
@@ -399,16 +397,16 @@
     "nameTitle": null,
     "firstName": "rakesh",
     "middleName": null,
-    "lastName": "mehra",
+    "lastName": "rakesh",
     "nameSuffix": null,
-    "compositeName": "mehra, rakesh",
+    "compositeName": "rakesh, rakesh",
     "namePrefixUnmasked": null,
     "nameTitleUnmasked": null,
     "firstNameUnmasked": "rakesh",
     "middleNameUnmasked": null,
-    "lastNameUnmasked": "mehra",
+    "lastNameUnmasked": "rakesh",
     "nameSuffixUnmasked": null,
-    "compositeNameUnmasked": "mehra, eakesh",
+    "compositeNameUnmasked": "rakesh, rakesh",
     "noteMessage": null,
     "nameChangedDate": null,
     "suppressName": false,

@@ -1,4 +1,4 @@
-/ run without docker 
+// run without docker 
 java -jar target/react-spring-0.0.1-SNAPSHOT.jar
 //build the jar 
 ./mvnw package

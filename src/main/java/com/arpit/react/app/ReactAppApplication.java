@@ -3,37 +3,24 @@ package com.arpit.react.app;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
 import javax.xml.ws.Holder;
 
-import org.json.JSONObject;
-import org.kuali.rice.kim.v2_0.AddAffiliationToEntity;
-import org.kuali.rice.kim.v2_0.AddAffiliationToEntityResponse;
-import org.kuali.rice.kim.v2_0.AddEmploymentToEntity;
-import org.kuali.rice.kim.v2_0.AddEmploymentToEntityResponse;
 import org.kuali.rice.kim.v2_0.AddEntityTypeContactInfoToEntity;
 import org.kuali.rice.kim.v2_0.AddEntityTypeContactInfoToEntityResponse;
-import org.kuali.rice.kim.v2_0.AddPrincipalToEntity;
-import org.kuali.rice.kim.v2_0.AddPrincipalToEntityResponse;
 import org.kuali.rice.kim.v2_0.CreateEntity;
 import org.kuali.rice.kim.v2_0.CreateEntityResponse;
 import org.kuali.rice.kim.v2_0.EntityAffiliationType;
+import org.kuali.rice.kim.v2_0.EntityEmailType;
 import org.kuali.rice.kim.v2_0.EntityEmploymentType;
 import org.kuali.rice.kim.v2_0.EntityNameType;
 import org.kuali.rice.kim.v2_0.EntityType;
 import org.kuali.rice.kim.v2_0.EntityTypeContactInfoType;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeId;
 import org.kuali.rice.kim.v2_0.GetEntityByEmployeeIdResponse;
-import org.kuali.rice.kim.v2_0.GetPrincipal;
-import org.kuali.rice.kim.v2_0.GetPrincipals;
-import org.kuali.rice.kim.v2_0.GetPrincipalsResponse;
 import org.kuali.rice.kim.v2_0.IdentityService;
 import org.kuali.rice.kim.v2_0.IdentityService_Service;
 import org.kuali.rice.kim.v2_0.ObjectFactory;
-import org.kuali.rice.kim.v2_0.PrincipalType;
 import org.kuali.rice.kim.v2_0.RiceIllegalArgumentException;
 import org.kuali.rice.kim.v2_0.RiceIllegalStateException;
 import org.springframework.boot.SpringApplication;
@@ -52,22 +39,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.bu.identityApi.Entity;
-import edu.bu.identityApi.Principals;
 import edu.bu.kuali.rice.kew.client.KSBCampusServiceClient;
 @SpringBootApplication
 @RestController
 public class ReactAppApplication {
 	//private ObjectFactory objectFactory;
 	public static void main(String[] args) {
+
 		SpringApplication.run(ReactAppApplication.class, args);
 	}
 
 	@GetMapping("/employee/get")
 	public List<Employee> get() throws RiceIllegalArgumentException {
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
-
-		IdentityService svc = client.getCampusService(wsdlURL);
+		IdentityService svc = initializeService();
 		// Campuses campuses = svc.findAllCampuses();
 		ObjectFactory factory = new ObjectFactory();
 
@@ -84,10 +68,7 @@ public class ReactAppApplication {
 //http://localhost:8080/employee/get/U17116978
 	@GetMapping("/employee/get/{id}")
 	public ResponseEntity getCustomer(@PathVariable("id") String id) throws RiceIllegalArgumentException {
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
-
-		IdentityService svc = client.getCampusService(wsdlURL);
+		IdentityService svc = initializeService();
 		// Campuses campuses = svc.findAllCampuses();
 		GetEntityByEmployeeId idd = new GetEntityByEmployeeId();
 		idd.setEmployeeId(id);
@@ -118,17 +99,12 @@ public class ReactAppApplication {
  */
 	@PostMapping(value = "/employee/createEntity")
 	public ResponseEntity createEntity(@RequestBody  Entity entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
+		IdentityService svc = initializeService();
 		ObjectFactory factory = new ObjectFactory();
 	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
 	    final EntityType pojo = mapper.convertValue(entity, EntityType.class);
-
 		CreateEntity createNewEntity = factory.createCreateEntity();
 		createNewEntity.setEntity(pojo);
-		IdentityService svc = client.getCampusService(wsdlURL);
-
 		CreateEntityResponse response = svc.createEntity(createNewEntity);
 		return new ResponseEntity(response, HttpStatus.OK);
 	}
@@ -151,13 +127,10 @@ public class ReactAppApplication {
  */
 	@PostMapping(value = "/employee/addEntityTypeContactInfoToEntity")
 	public ResponseEntity addEntityTypeContactInfoToEntity(@RequestBody  EntityTypeContactInfoType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
+		IdentityService svc = initializeService();
 		ObjectFactory factory = new ObjectFactory();
 	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
 	    final EntityTypeContactInfoType pojo = mapper.convertValue(entity, EntityTypeContactInfoType.class);
-		IdentityService svc = client.getCampusService(wsdlURL);
 		AddEntityTypeContactInfoToEntity contactToEntity = factory.createAddEntityTypeContactInfoToEntity();
 		contactToEntity.setEntityTypeContactInfo(pojo);
 		AddEntityTypeContactInfoToEntityResponse response = svc.addEntityTypeContactInfoToEntity(contactToEntity);
@@ -185,18 +158,9 @@ public class ReactAppApplication {
 	 */
 	@PostMapping(value = "/employee/addAffliationToEntity")
 	public ResponseEntity addAffliationToEntity(@RequestBody  EntityAffiliationType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
-		ObjectFactory factory = new ObjectFactory();
-	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
-	    final EntityAffiliationType pojo = mapper.convertValue(entity, EntityAffiliationType.class);
-
-		//CreateEntity createNewEntity = factory.createCreateEntity();
-
-		IdentityService svc = client.getCampusService(wsdlURL);
+		IdentityService svc = initializeService();
 		//AddAffiliationToEntity type = factory.createAddAffiliationToEntity();
-	    final Holder<EntityAffiliationType> holder = new Holder<EntityAffiliationType>(pojo);
+	    final Holder<EntityAffiliationType> holder = new Holder<EntityAffiliationType>(entity);
 	    svc.addAffiliationToEntity(holder);
 		return new ResponseEntity(HttpStatus.OK);
 	}
@@ -247,19 +211,9 @@ public class ReactAppApplication {
 
 	@PostMapping(value = "/employee/addEmploymentToEntity")
 	public ResponseEntity addEmploymentToEntity(@RequestBody  EntityEmploymentType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
-		ObjectFactory factory = new ObjectFactory();
-	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
-	    final EntityEmploymentType pojo = mapper.convertValue(entity, EntityEmploymentType.class);
-
-	   // AddEmploymentToEntity addEmploymentToEntity = factory.createAddEmploymentToEntity();
-	    final Holder<EntityEmploymentType> holder = new Holder<EntityEmploymentType>(pojo);
-
-		IdentityService svc = client.getCampusService(wsdlURL);
-
-		 svc.addEmploymentToEntity(holder);
+		IdentityService svc = initializeService();
+	    final Holder<EntityEmploymentType> holder = new Holder<EntityEmploymentType>(entity);
+		svc.addEmploymentToEntity(holder);
 		return new ResponseEntity(HttpStatus.OK);
 	}
 /*http://localhost:8090/employee/addNameToEntity
@@ -296,32 +250,44 @@ public class ReactAppApplication {
  */
 	@PostMapping(value = "/employee/addNameToEntity")
 	public ResponseEntity addNameToEntity(@RequestBody  EntityNameType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
+		IdentityService svc = initializeService();
 	    final Holder<EntityNameType> holder = new Holder<EntityNameType>(entity);
-		IdentityService svc = client.getCampusService(wsdlURL);
 		 svc.addNameToEntity(holder);
 		return new ResponseEntity( HttpStatus.OK);
 	}
-
+/*http://localhost:8090/employee/addEmailToEntity
+ *  {
+                                "entityTypeCode": "PERSON",
+                                "entityId": "F344444",
+                                "emailType": {
+                                    "code": "WRK",
+                                    "name": "Work",
+                                    "sortCode": "a",
+                                    "active": true,
+                                    "any": []
+                                },
+                                "emailAddress": "Mohabbetkhan@BU.EDU",
+                                "emailAddressUnmasked": "Mohabbetkhan@BU.EDU",
+                                "suppressEmail": false,
+                                "defaultValue": true,
+                                "active": true,
+                                "any": []
+                            }
+ */
 	@PostMapping(value = "/employee/addEmailToEntity")
-	public ResponseEntity addEmailToEntity(@RequestBody  Entity entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
-
-		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
-		KSBCampusServiceClient client = new KSBCampusServiceClient();
-		ObjectFactory factory = new ObjectFactory();
-	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper
-	    final EntityType pojo = mapper.convertValue(entity, EntityType.class);
-
-		CreateEntity createNewEntity = factory.createCreateEntity();
-		createNewEntity.setEntity(pojo);
-		IdentityService svc = client.getCampusService(wsdlURL);
-
-		CreateEntityResponse response = svc.createEntity(createNewEntity);
-		return new ResponseEntity(response, HttpStatus.OK);
+	public ResponseEntity addEmailToEntity(@RequestBody  EntityEmailType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
+		IdentityService svc = initializeService();
+	    final Holder<EntityEmailType> holder = new Holder<EntityEmailType>(entity);
+		svc.addEmailToEntity(holder);
+		return new ResponseEntity(HttpStatus.OK);
 	}
 
+	private static IdentityService initializeService() {
+		URL wsdlURL = IdentityService_Service.WSDL_LOCATION;
+		KSBCampusServiceClient client = new KSBCampusServiceClient();
+		IdentityService svc = client.getCampusService(wsdlURL);
+		return svc;
+	}
 
 	@DeleteMapping("/employee/{id}")
 	public ResponseEntity deleteEmployee(@PathVariable String id) {

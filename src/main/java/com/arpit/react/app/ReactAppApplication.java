@@ -84,21 +84,438 @@ public class ReactAppApplication {
 /*Pass this json  this will create an entity to the api http://localhost:8090/employee/createEntity
  * {
 
-  "id": "U17114444",
   "principals": {
     "principal": [
       {
-        "principalId": "U17114444",
-        "principalName": "mukadd3eeer",
+        "principalId": "k345666",
+        "principalName": "k345666",
+        "entityId": "k345666",
         "active": true,
         "any": []
       }
     ]
-  }
+  },
+  "entityTypeContactInfos": {
+    "entityTypeContactInfo": [
+      {
+        "entityId": "k345666",
+        "entityTypeCode": "PERSON",
+        "entityType": {
+          "code": "PERSON",
+          "name": "Person",
+          "sortCode": "01",
+          "active": true,
+          "any": []
+        },
+        "addresses": {
+          "address": [
+            {
+              "entityTypeCode": "PERSON",
+              "entityId": "k345666",
+              "addressType": {
+                "code": "WRK",
+                "name": "Work",
+                "sortCode": "a",
+                "active": true,
+                "any": []
+              },
+              "attentionLine": null,
+              "line1": "Administrative Offices - Buick",
+              "line2": "Boston University",
+              "line3": "25 Buick St",
+              "city": "Boston",
+              "stateProvinceCode": "MA",
+              "postalCode": "02215",
+              "countryCode": "US",
+              "attentionLineUnmasked": null,
+              "line1Unmasked": "Administrative Offices - Buick",
+              "line2Unmasked": "Boston University",
+              "line3Unmasked": "25 Buick St",
+              "cityUnmasked": "Boston",
+              "stateProvinceCodeUnmasked": "MA",
+              "postalCodeUnmasked": "02215",
+              "countryCodeUnmasked": "US",
+              "addressFormat": null,
+              "modifiedDate": null,
+              "validatedDate": null,
+              "validated": false,
+              "noteMessage": null,
+              "suppressAddress": false,
+              "defaultValue": true,
+              "active": true,
+              "any": []
+            }
+          ]
+        },
+        "emailAddresses": {
+          "emailAddress": [
+            {
+              "entityTypeCode": "PERSON",
+              "entityId": "k345666",
+              "emailType": {
+                "code": "WRK",
+                "name": "Work",
+                "sortCode": "a",
+                "active": true,
+                "versionNumber": 1,
+                "any": []
+              },
+              "emailAddress": "k345666@BU.EDU",
+              "emailAddressUnmasked": "k345666@BU.EDU",
+              "suppressEmail": false,
+              "defaultValue": true,
+              "active": true,
+              "any": []
+            }
+          ]
+        },
+        "phoneNumbers": {
+          "phoneNumber": [
+            {
+              "entityTypeCode": "PERSON",
+              "entityId": "k345666",
+              "phoneType": {
+                "code": "WRK",
+                "name": "Work",
+                "sortCode": "a",
+                "active": true,
+                "any": []
+              },
+              "countryCode": null,
+              "phoneNumber": "617-353-9500",
+              "extensionNumber": null,
+              "formattedPhoneNumber": "617-353-9500",
+              "countryCodeUnmasked": null,
+              "phoneNumberUnmasked": "617-353-9500",
+              "extensionNumberUnmasked": null,
+              "formattedPhoneNumberUnmasked": "617-353-9500",
+              "suppressPhone": false,
+              "defaultValue": false,
+              "active": true,
+              "any": []
+            },
+            {
+              "entityTypeCode": "PERSON",
+              "entityId": "k345666",
+              "phoneType": {
+                "code": "WRK",
+                "name": "Work",
+                "sortCode": "a",
+                "active": true,
+                "any": []
+              },
+              "countryCode": null,
+              "phoneNumber": "617-358-0196",
+              "extensionNumber": null,
+              "formattedPhoneNumber": "617-358-0196",
+              "countryCodeUnmasked": null,
+              "phoneNumberUnmasked": "617-358-0196",
+              "extensionNumberUnmasked": null,
+              "formattedPhoneNumberUnmasked": "617-358-0196",
+              "suppressPhone": false,
+              "defaultValue": true,
+              "active": true,
+              "any": []
+            }
+          ]
+        },
+        "defaultAddress": {
+          "entityTypeCode": "PERSON",
+          "entityId": "k345666",
+          "addressType": {
+            "code": "WRK",
+            "name": "Work",
+            "sortCode": "a",
+            "active": true,
+            "any": []
+          },
+          "attentionLine": null,
+          "line1": "Administrative Offices - Buick",
+          "line2": "Boston University",
+          "line3": "25 Buick St",
+          "city": "Boston",
+          "stateProvinceCode": "MA",
+          "postalCode": "02215",
+          "countryCode": "US",
+          "attentionLineUnmasked": null,
+          "line1Unmasked": "Administrative Offices - Buick",
+          "line2Unmasked": "Boston University",
+          "line3Unmasked": "25 Buick St",
+          "cityUnmasked": "Boston",
+          "stateProvinceCodeUnmasked": "MA",
+          "postalCodeUnmasked": "02215",
+          "countryCodeUnmasked": "US",
+          "addressFormat": null,
+          "modifiedDate": null,
+          "validatedDate": null,
+          "validated": false,
+          "noteMessage": null,
+          "suppressAddress": false,
+          "defaultValue": true,
+          "active": true,
+          "any": []
+        },
+        "defaultEmailAddress": {
+          "entityTypeCode": "PERSON",
+          "entityId": "k345666",
+          "emailType": {
+            "code": "WRK",
+            "name": "Work",
+            "sortCode": "a",
+            "active": true,
+            "versionNumber": 1,
+            "any": []
+          },
+          "emailAddress": "MUKADDER@BU.EDU",
+          "emailAddressUnmasked": "MUKADDER@BU.EDU",
+          "suppressEmail": false,
+          "defaultValue": true,
+          "active": true,
+          "any": []
+        },
+        "defaultPhoneNumber": {
+          "entityTypeCode": "PERSON",
+          "entityId": "U171169718",
+          "phoneType": {
+            "code": "WRK",
+            "name": "Work",
+            "sortCode": "a",
+            "active": true,
+            "any": []
+          },
+          "countryCode": null,
+          "phoneNumber": "617-358-0196",
+          "extensionNumber": null,
+          "formattedPhoneNumber": "617-358-0196",
+          "countryCodeUnmasked": null,
+          "phoneNumberUnmasked": "617-358-0196",
+          "extensionNumberUnmasked": null,
+          "formattedPhoneNumberUnmasked": "617-358-0196",
+          "suppressPhone": false,
+          "defaultValue": true,
+          "active": true,
+          "any": []
+        },
+        "active": true,
+        "any": []
+      }
+    ]
+  },
+  "externalIdentifiers": {
+    "externalIdentifier": []
+  },
+  "affiliations": {
+    "affiliation": [
+      {
+        "entityId": "k345666",
+        "affiliationType": {
+          "code": "0002",
+          "name": "NREP-Staff",
+          "sortCode": null,
+          "active": true,
+          "employmentAffiliationType": false,
+          "versionNumber": 1,
+          "any": []
+        },
+        "campusCode": "10",
+        "defaultValue": true,
+        "active": true,
+        "any": []
+      }
+    ]
+  },
+  "names": {
+    "name": [
+      {
+        "entityId": "k345666",
+        "nameType": {
+          "code": "PRFR",
+          "name": "Preferred",
+          "sortCode": "b",
+          "active": true,
+          "any": []
+        },
+        "namePrefix": null,
+        "nameTitle": null,
+        "firstName": "HITESH",
+        "middleName": null,
+        "lastName": "TARA",
+        "nameSuffix": null,
+        "compositeName": "TARA, HITESH",
+        "namePrefixUnmasked": null,
+        "nameTitleUnmasked": null,
+        "firstNameUnmasked": "HITESH",
+        "middleNameUnmasked": null,
+        "lastNameUnmasked": "TARA",
+        "nameSuffixUnmasked": null,
+        "compositeNameUnmasked": "TARA, HITESH",
+        "noteMessage": null,
+        "nameChangedDate": null,
+        "suppressName": false,
+        "defaultValue": true,
+        "active": true,
+        "any": []
+      }
+    ]
+  },
+  "employmentInformation": {
+    "employment": [
+      {
+        "entityId": "k345666",
+        "employeeId": "k345666",
+        "employmentRecordId": "2",
+        "entityAffiliation": {
+          "id": "47537",
+          "entityId": "k345666",
+          "affiliationType": {
+            "code": "0002",
+            "name": "NREP-Staff",
+            "sortCode": null,
+            "active": true,
+            "employmentAffiliationType": false,
+            "versionNumber": 1,
+            "any": []
+          },
+          "campusCode": "10",
+          "defaultValue": true,
+          "active": true,
+          "any": []
+        },
+        "employeeStatus": {
+          "code": "3",
+          "name": "Active",
+          "sortCode": null,
+          "active": true,
+          "any": []
+        },
+        "employeeType": {
+          "code": "6",
+          "name": "Staff-Exempt FT",
+          "sortCode": null,
+          "active": true,
+          "any": []
+        },
+        "primaryDepartmentCode": "1510500000",
+        "baseSalaryAmount": "0.00",
+        "primary": true,
+        "active": true,
+        "any": []
+      }
+    ]
+  },
+  "privacyPreferences": {
+    "entityId": "k345666",
+    "suppressName": false,
+    "suppressAddress": false,
+    "suppressEmail": false,
+    "suppressPhone": false,
+    "suppressPersonal": false,
+    "any": []
+  },
+  "bioDemographics": null,
+  "citizenships": {
+    "citizenship": []
+  },
+  "primaryEmployment": {
+    "entityId": "k345666",
+    "employeeId": "k345666",
+    "employmentRecordId": "2",
+    "entityAffiliation": {
+      "entityId": "k345666",
+      "affiliationType": {
+        "code": "0002",
+        "name": "NREP-Staff",
+        "sortCode": null,
+        "active": true,
+        "employmentAffiliationType": false,
+        "any": []
+      },
+      "campusCode": "10",
+      "defaultValue": true,
+      "active": true,
+      "any": []
+    },
+    "employeeStatus": {
+      "code": "3",
+      "name": "Active",
+      "sortCode": null,
+      "active": true,
+      "any": []
+    },
+    "employeeType": {
+      "code": "6",
+      "name": "Staff-Exempt FT",
+      "sortCode": null,
+      "active": true,
+      "any": []
+    },
+    "primaryDepartmentCode": "1510500000",
+    "baseSalaryAmount": "0.00",
+    "primary": true,
+    "active": true,
+    "any": []
+  },
+  "defaultAffiliation": {
+    "entityId": "k345666",
+    "affiliationType": {
+      "code": "0002",
+      "name": "NREP-Staff",
+      "sortCode": null,
+      "active": true,
+      "employmentAffiliationType": false,
+      "any": []
+    },
+    "campusCode": "10",
+    "defaultValue": true,
+    "active": true,
+    "any": []
+  },
+  "defaultName": {
+    "entityId": "k345666",
+    "nameType": {
+      "code": "PRFR",
+      "name": "Preferred",
+      "sortCode": "b",
+      "active": true,
+      "any": []
+    },
+    "namePrefix": null,
+    "nameTitle": null,
+    "firstName": "rakesh",
+    "middleName": null,
+    "lastName": "mehra",
+    "nameSuffix": null,
+    "compositeName": "mehra, rakesh",
+    "namePrefixUnmasked": null,
+    "nameTitleUnmasked": null,
+    "firstNameUnmasked": "rakesh",
+    "middleNameUnmasked": null,
+    "lastNameUnmasked": "mehra",
+    "nameSuffixUnmasked": null,
+    "compositeNameUnmasked": "mehra, eakesh",
+    "noteMessage": null,
+    "nameChangedDate": null,
+    "suppressName": false,
+    "defaultValue": true,
+    "active": true,
+    "any": []
+  },
+  "ethnicities": {
+    "ethnicity": []
+  },
+  "residencies": {
+    "residency": []
+  },
+  "visas": {
+    "visa": []
+  },
+  "active": true,
+  "any": []
+
 }
  */
 	@PostMapping(value = "/employee/createEntity")
-	public ResponseEntity createEntity(@RequestBody  Entity entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
+	public ResponseEntity createEntity(@RequestBody  EntityType entity) throws RiceIllegalArgumentException, RiceIllegalStateException {
 		IdentityService svc = initializeService();
 		ObjectFactory factory = new ObjectFactory();
 	    final ObjectMapper mapper = new ObjectMapper(); // jackson's objectmapper

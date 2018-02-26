@@ -3,7 +3,7 @@
     <soapenv:Body>
         <v2:addEntityTypeContactInfoToEntity>
         <v2:entityTypeContactInfo>
-            <v2:entityId>U222222222</v2:entityId>
+            <v2:entityId>U2222222221111</v2:entityId>
             <v2:entityTypeCode>PERSON</v2:entityTypeCode>
             <!--Optional:-->
             <v2:entityType>
@@ -17,5 +17,8 @@
                 <!--Optional:-->
                 <!--You may enter ANY elements at this point-->
             </v2:entityType>
-        </v2:entityTypeContactInfo>  </v2:addEntityTypeContactInfoToEntity>  </soapenv:Body>
+            <v2:active>true</v2:active>
+        </v2:entityTypeContactInfo>  
+        
+        </v2:addEntityTypeContactInfoToEntity>  </soapenv:Body>
 </soapenv:Envelope>

@@ -26,11 +26,11 @@ public class IdentityService_Service extends Service {
     static {
         URL url = null;
         try {
-            url = new URL("file:/Users/mukadder/react/pad/react-app/src/main/resources/wsdl/identityService.wsdl");
+            url = new URL("file:/usr/share/identityService.wsdl");
         } catch (MalformedURLException e) {
             java.util.logging.Logger.getLogger(IdentityService_Service.class.getName())
                 .log(java.util.logging.Level.INFO,
-                     "Can not initialize the default wsdl from {0}", "file:/Users/mukadder/react/pad/react-app/src/main/resources/wsdl/identityService.wsdl");
+                     "Can not initialize the default wsdl from {0}", "file:/Users/mukadder/git/react-app/identityService.wsdl");
         }
         WSDL_LOCATION = url;
     }

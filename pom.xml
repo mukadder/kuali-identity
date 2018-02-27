@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.arpit.react.app</groupId>
-	<artifactId>react-spring</artifactId>
+	<artifactId>kuali-identity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>react-spring</name>
+	<name>kuali-identity</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

@@ -15,7 +15,7 @@ import javax.xml.ws.Service;
  *
  */
 @WebServiceClient(name = "identityService",
-                  wsdlLocation = "file:/Users/mukadder/react/pad/react-app/src/main/resources/wsdl/identityService.wsdl",
+                  wsdlLocation = "file:/identityService.wsdl",
                   targetNamespace = "http://rice.kuali.org/kim/v2_0")
 public class IdentityService_Service extends Service {
 

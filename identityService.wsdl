@@ -4065,7 +4065,7 @@
 </wsdl:binding>
 <wsdl:service name="identityService">
 <wsdl:port binding="tns:identityServiceSoapBinding" name="identityServicePort">
-<soap:address location="https://kuali-research-qa.bu.edu/kc/remoting/soap/kim/v2_0/identityService"/>
+<soap:address location="http://localhost:8080/kc-dev/remoting/soap/kim/v2_0/identityService"/>
 </wsdl:port>
 </wsdl:service>
 </wsdl:definitions>
